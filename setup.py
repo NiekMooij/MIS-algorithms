@@ -7,10 +7,7 @@ setup(
     install_requires=[
         'networkx',
         'numpy',
-        'random',
         'scipy',
-        'warnings',
-        'communities',
         'pulp',
     ],
     entry_points={
