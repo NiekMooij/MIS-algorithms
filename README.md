@@ -19,7 +19,7 @@ This Python package provides efficient algorithms for calculating maximal indepe
 - **Lotka-Volterra Algorithm:** Efficient implementation of the Lotka-Volterra algorithm for maximal independent set calculation.
 - **Continuation Algorithm:** The Continuation Clgorithm to find maximal independent sets in graphs.
 - **Greedy Algorithm:** Implementation of the Greedy algorithm for maximal independent set approximation, where we select vertices based on the minimum degree.
-- **Exact Algorithm:** An exact algorithm to find the exact maximal independent set in a given graph. Used much functionaluty from the PuLP package!
+- **Exact Algorithm:** An exact algorithm to find the exact maximal independent set in a given graph. Used much functionality from the PuLP package!
 
 ## Installation
 You can install the package using pip:
