@@ -1,6 +1,6 @@
 ## Overview
 
-This Python package provides efficient algorithms for calculating maximal independent sets in graphs. The project includes various scripts in the `MIS` folder, each implementing a different algorithm for computing these sets. The Lotka-Volterra Algorithm and the Continuation Lotka-Volterra Algorithm are both described in the paper "Finding Large Independent Sets in Networks Using Competitive Dynamics".
+This Python package provides efficient algorithms for calculating maximal independent sets in graphs. The project includes various scripts in the `MIS-algorithms` folder, each implementing a different algorithm for computing these sets. The Lotka-Volterra Algorithm and the Continuation Lotka-Volterra Algorithm are both described in the paper "Finding Large Independent Sets in Networks Using Competitive Dynamics".
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/downloads/)
@@ -25,7 +25,7 @@ This Python package provides efficient algorithms for calculating maximal indepe
 You can install the package using pip:
 
 ```bash
-pip install MIS
+pip install MIS-algorithms
 ```
 
 ## Usage

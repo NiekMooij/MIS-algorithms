@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='MIS',
-    version='0.0.1',
+    name='MIS_algorithms',
+    version='0.0.3',
     author='Niek Mooij',
     author_email='mooij.niek@gmail.com',
     description='All algorithms used in the paper "Finding Large Independent Sets in Networks Using Competitive Dynamics"',
@@ -26,9 +26,11 @@ setup(
             'greedy=MIS.greedy:main',
             'lotka_volterra=MIS.lotka_volterra:main',
             'erdos_renyi=MIS.generate_graphs.erdos_renyi:main',
-            'random_bipartite=MIS.generate_graphs.random_bipartite:main'
-            'random_geometric=MIS.generate_graphs.random_geometric:main'
+            'random_bipartite=MIS.generate_graphs.random_bipartite:main',
+            'random_geometric=MIS.generate_graphs.random_geometric:main',
+            'is_maximal_independent_set=MIS.functions.is_maximal_independent_set:main',
+            'reduced_graph=MIS.functions.reduced_graph:main'
+
         ],
     },
 )
-
