@@ -22,14 +22,13 @@ This Python package provides efficient algorithms for calculating maximal indepe
 - **Exact Algorithm:** An exact algorithm to find the exact maximal independent set in a given graph. Used much functionaluty from the PuLP package!
 
 ## Installation
-
 You can install the package using pip:
 
 ```bash
-pip install my_awesome_project
+pip install MIS
+```
 
 ## Usage
-
 To use the package, import the relevant script from the MIS folder based on the algorithm you'd like to apply.
 
 ## Configuration
