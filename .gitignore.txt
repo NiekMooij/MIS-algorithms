@@ -1,1 +1,5 @@
 venv/
+.DS_Store
+dist
+build
+MIS_algorithms.egg-info
