@@ -2,9 +2,10 @@ import networkx as nx
 from communities.algorithms import bron_kerbosch
 from pulp import LpProblem, LpVariable, lpSum, LpMaximize
 
-from functions.is_maximal_independent_set import is_maximal_independent_set
+from .functions.is_maximal_independent_set import is_maximal_independent_set
 
-def exact_algorithm(G: nx.Graph) -> list:
+
+def exact(G: nx.Graph) -> list:
     """
     Find a maximum independent set in a graph using the exact algorithm.
 
@@ -30,7 +31,8 @@ def exact_algorithm(G: nx.Graph) -> list:
         print('Exact algorithm did not return MIS.')
         exit()
         
-def exact_algorithm_sparse(G: nx.Graph) -> list:
+
+def exact_sparse(G: nx.Graph) -> list:
     """
     Find a maximum independent set in a graph using a linear programming-based approach.
 
@@ -68,7 +70,8 @@ def exact_algorithm_sparse(G: nx.Graph) -> list:
         print('Exact algorithm did not return MIS.')
         exit()
 
-def exact_algorithm_bipartite(G: nx.Graph) -> list:
+
+def exact_bipartite(G: nx.Graph) -> list:
     """
     Find an exact solution for an independent set in a bipartite graph.
 

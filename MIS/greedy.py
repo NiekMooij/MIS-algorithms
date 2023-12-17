@@ -1,6 +1,6 @@
 import networkx as nx
+from .functions.is_maximal_independent_set import is_maximal_independent_set
 
-from functions.is_maximal_independent_set import is_maximal_independent_set
 
 def greedy(G: nx.Graph) -> list:
     """
@@ -12,7 +12,6 @@ def greedy(G: nx.Graph) -> list:
     Returns:
     - list: List of nodes forming an independent set.
     """
-    
     max_independent_set = []
     L = G.copy()
 
@@ -29,8 +28,7 @@ def greedy(G: nx.Graph) -> list:
         L.remove_node(nodes_with_min_degree[0])
 
     if is_maximal_independent_set(G, max_independent_set):
-        return max_independent_set   
-    
+        return max_independent_set
     else:
         print('Greedy algorithm did not return MIS.')
         exit()

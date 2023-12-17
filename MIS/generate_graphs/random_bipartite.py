@@ -1,7 +1,7 @@
 import random
 import networkx as nx
 
-def random_bipartite(sizeA: int, sizeB: int, p: float) -> nx.Graph:
+def random_bipartite(sizeA: int, sizeB: int, p: float, connected: bool = False) -> nx.Graph:
     """
     Generate a random bipartite graph.
 
@@ -9,23 +9,12 @@ def random_bipartite(sizeA: int, sizeB: int, p: float) -> nx.Graph:
     - sizeA (int): Number of vertices in set A.
     - sizeB (int): Number of vertices in set B.
     - p (float): Probability of an edge between vertices in set A and set B.
+    - connected (bool): Whether the graph should be connected.
 
     Returns:
     - nx.Graph: Bipartite graph with nodes labeled from 1 to sizeA+sizeB.
     """
-    # Create an empty bipartite graph
-    G = nx.Graph()
-
-    # Define nodes for set A and set B
-    A_vertices = list(range(1, sizeA + 1))
-    B_vertices = list(range(sizeA + 1, sizeA + sizeB + 1))
-
-    # Add nodes to the graph with bipartite attribute
-    G.add_nodes_from(A_vertices, bipartite=0)
-    G.add_nodes_from(B_vertices, bipartite=1)
-
-    # Ensure the graph is connected
-    while not nx.is_connected(G):
+    while True:
         # Re-initialize the graph and nodes
         G = nx.Graph()
         A_vertices = list(range(1, sizeA + 1))
@@ -38,5 +27,13 @@ def random_bipartite(sizeA: int, sizeB: int, p: float) -> nx.Graph:
             for vertexB in B_vertices:
                 if random.random() < p:
                     G.add_edge(vertexA, vertexB)
+
+        if not connected:
+            # Stop the process when the graph does not have to be connected
+            break
+
+        if nx.is_connected(G):
+            # Break whenever the graph is connected
+            break
 
     return G

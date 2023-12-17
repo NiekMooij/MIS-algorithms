@@ -3,7 +3,7 @@ import networkx as nx
 from scipy import integrate
 import warnings
 
-from functions.is_maximal_independent_set import is_maximal_independent_set
+from .functions.is_maximal_independent_set import is_maximal_independent_set
 
 def lotka_volterra(G: nx.Graph, tau: float, x0: np.ndarray) -> list:
     """
@@ -17,7 +17,7 @@ def lotka_volterra(G: nx.Graph, tau: float, x0: np.ndarray) -> list:
     Returns:
     - list: List of nodes forming an independent set based on the Lotka-Volterra dynamics.
     """
-    
+
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
 
@@ -56,8 +56,7 @@ def lotka_volterra(G: nx.Graph, tau: float, x0: np.ndarray) -> list:
         max_independent_set = [nodes_arr[i] for i in range(len(G)) if y[i] > 1 - 1e-5]
 
         if is_maximal_independent_set(G, max_independent_set):
-            return max_independent_set   
-        
+            return max_independent_set
         else:
             print('Lotka-Volterra algorithm did not return MIS.')
             exit()

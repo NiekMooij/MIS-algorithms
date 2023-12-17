@@ -1,13 +1,14 @@
 import networkx as nx
 import numpy as np
 
+
 def reduced_graph(G: nx.Graph, node_arr: list) -> nx.Graph:
     """
     Generate a reduced graph by removing a specified set of nodes and their neighbors.
 
     Parameters:
     - G (nx.Graph): The input graph.
-    - one_set (list): List of nodes to be removed along with their neighbors.
+    - node_arr (list): List of nodes to be removed along with their neighbors.
 
     Returns:
     - nx.Graph: The reduced graph after removing the specified nodes and their neighbors.
