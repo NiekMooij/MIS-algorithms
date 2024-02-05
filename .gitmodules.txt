@@ -1,0 +1,3 @@
+[submodule "github_package"]
+    path = github_package
+    url = git://github.com/NiekMooij/github_package.git
