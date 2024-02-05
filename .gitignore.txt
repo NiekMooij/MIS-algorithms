@@ -1,0 +1,4 @@
+# .gitignore
+
+# Ignore system and IDE files
+.DS_Store
