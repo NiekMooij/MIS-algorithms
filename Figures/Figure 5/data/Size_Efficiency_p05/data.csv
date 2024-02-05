@@ -1,0 +1,7 @@
+type,size,p_connection,LV_eff,continuation_eff,greedy_eff
+bipartite,46,0.5,0.879,1.0,0.975
+bipartite,66,0.5,0.94,1.0,0.993
+bipartite,90,0.5,0.982,1.0,0.999
+bipartite,130,0.5,0.999,1.0,1.0
+bipartite,160,0.5,0.995,1.0,1.0
+bipartite,200,0.5,1.0,1.0,1.0
