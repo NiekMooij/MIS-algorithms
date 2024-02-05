@@ -8,7 +8,7 @@ This Github directory contains all the codes used for the paper "Finding large i
 ## Table of Contents
 
 - [MIS_algorithms](#MIS_algorithms)
-- [simulations](#simulations)
+- [Simulations](#Simulations)
 - [DIMACS](#DIMACS)
 - [Figures](#Figures)
 
@@ -20,7 +20,7 @@ You can install the package using pip:
 pip install MIS-algorithms
 ```
 
-## simulations
+## Simulations
 This folder contains all scripts regarding the performed simulations on Erdos-Renyi graphs, random bipartite graphs and random geometric graphs.
 
 ## DIMACS
